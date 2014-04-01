@@ -984,7 +984,7 @@
                 isCursorAtEnd = laxCursor || this.input.isCursorAtEnd();
                 if (hint && query !== hint && isCursorAtEnd) {
                     datum = this.dropdown.getDatumForTopSuggestion();
-                    datum && this.input.setInputValue(datum.value);
+                    //datum && this.input.setInputValue(datum.value);
                     this.eventBus.trigger("autocompleted", datum.raw, datum.datasetName);
                 }
             },
